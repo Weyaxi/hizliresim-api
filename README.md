@@ -38,8 +38,13 @@ You can use this program with command line using this code:
    python3 contextmenu_project.py <path_to_image>
    ```
 
-The program will upload the image to Hizliresim and open the uploaded image url in your default web browser.
+Or if you want to upload more than one image you can use this code:
 
+   ```shell
+   python3 contextmenu_project.py <path_to_image1> <path_to_image2> <path_to_image3>
+   ```
+
+The program will upload the image(s) to Hizliresim and open the uploaded image(s) url in your default web browser.
 
 # Context Menu Integration
 
