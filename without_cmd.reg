@@ -4,4 +4,4 @@ Windows Registry Editor Version 5.00
 @="Upload to Hizliresim"
 
 [HKEY_CLASSES_ROOT\*\shell\Upload to Hizliresim\command]
-@="\"C:\\Users\\<user>\\AppData\\Local\\Microsoft\\WindowsApps\\pythonw.exe\" \"C:\\Users\\<user>\\Desktop\\hizliresim\\contextmenu_project.py\" \"%1\" \"%*\""
+@="\"C:\\Users\\<user>\\AppData\\Local\\Microsoft\\WindowsApps\\pythonw.exe\" \"C:\\Users\\<user>\\Desktop\\hizliresim-api\\contextmenu_project.py\" \"%1\" \"%*\""
