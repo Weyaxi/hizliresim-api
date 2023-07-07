@@ -67,7 +67,7 @@ To add a "Upload to Hizliresim" option to the right-click context menu in Window
 
 Right-click any file in Windows Explorer and select "Upload to Hizliresim". The program will upload the image to Hizliresim and open the uploaded image url.
 
-![image](https://github.com/Weyaxi/hizliresim-api/assets/81961593/1d942ca1-0604-4841-b078-f5b4fca767bc)
+![context](https://github.com/Weyaxi/hizliresim-api/assets/81961593/4c0bf154-64e8-40c5-a512-73441e75e2d7)
 
 ## Note
 
@@ -77,8 +77,9 @@ Unfortunately I couldn't fixed the multifile context menu integratation. So if u
 
 ## Single File Upload
 
-![1](https://github.com/Weyaxi/hizliresim-api/assets/81961593/2bf42ce7-0610-4dec-8da6-54006ea8a2da)
+![1](https://github.com/Weyaxi/hizliresim-api/assets/81961593/62a64588-c8e2-4fd7-aa71-409668c113a2)
 
 ## Multi File Upload
 
-![2](https://github.com/Weyaxi/hizliresim-api/assets/81961593/7f39f09e-dc99-40d0-a888-c500d8cbfe9d)
+![2](https://github.com/Weyaxi/hizliresim-api/assets/81961593/8c07beab-5a26-46e6-9cac-9bd7f93f18c7)
+
