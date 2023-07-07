@@ -12,6 +12,7 @@ def upload_pics(file_paths):
 
     chrome_options = Options()
     chrome_options.add_argument("--headless")
+    chrome_options.add_experimental_option("excludeSwitches", ["enable-logging"])
     driver = webdriver.Chrome(options=chrome_options)
     driver.get('https://hizliresim.com')
 
