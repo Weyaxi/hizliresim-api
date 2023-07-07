@@ -32,25 +32,34 @@ Before using this program, make sure you have the following:
 
 # Usage
 
-You can use this program with command line using this code:
+You can use this api like this:
 
-   ```shell
-   python3 contextmenu_project.py <path_to_image>
+   ```python
+   import api
+
+# Single File Upload
+
+single_image_path = r'C:/absolute/path1'
+
+api.upload_pics(single_image_path)  # Output: https://i.hizliresim.com/image.png
+
+# Multi File Upload
+
+image_paths = [r'C:/absolute/path1', r'C:/absolute/path2', r'C:/absolute/path3']
+
+api.upload_pics(image_paths)  # Output: ['https://i.hizliresim.com/image.png', 'https://i.hizliresim.com/image2.png', 'https://i.hizliresim.com/image3.png']
+
+
+
    ```
 
-Or if you want to upload more than one image you can use this code:
-
-   ```shell
-   python3 contextmenu_project.py <path_to_image1> <path_to_image2> <path_to_image3>
-   ```
-
-The program will upload the image(s) to Hizliresim and open the uploaded image(s) url in your default web browser.
+The api will upload the image(s) to Hizliresim and returns the link(s) of the uploaded images.
 
 # Context Menu Integration
 
 To add a "Upload to Hizliresim" option to the right-click context menu in Windows Explorer, follow these steps:
 
-1. Open the `with_cmd.reg` or `without_cmd.reg` file (depending on whether you want to open a command prompt while sending the image) in a text editor.
+1. Open the `add_to_context.reg` file in a text editor.
 
 2. Update the script's and python's file path in the registry file to match the location of the necessary files on your system.
 
@@ -60,9 +69,16 @@ Right-click any file in Windows Explorer and select "Upload to Hizliresim". The 
 
 ![image](https://github.com/Weyaxi/hizliresim-api/assets/81961593/1d942ca1-0604-4841-b078-f5b4fca767bc)
 
+## Note
+
+Unfortunately I couldn't fixed the multifile context menu integratation. So if user selects more than one image and click to "Upload to Hızliresim" it will upload images seperatly (opening more than one browser in background). But my `api.py` code supports multi file uploading in one browser. You only have to send the paths to the function in an array.
+
 ## Demo
 
+## Single File Upload
 
+![1](https://github.com/Weyaxi/hizliresim-api/assets/81961593/2bf42ce7-0610-4dec-8da6-54006ea8a2da)
 
+## Multi File Upload
 
-
+![2](https://github.com/Weyaxi/hizliresim-api/assets/81961593/7f39f09e-dc99-40d0-a888-c500d8cbfe9d)
